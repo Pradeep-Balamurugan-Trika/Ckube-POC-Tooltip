@@ -48,11 +48,6 @@ const Canvas = (
 			ctx = canvas.getContext("2d");
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight;
-			boxes.map((box, i) => {
-				boxes[i].x = Math.random() * window.innerWidth;
-				boxes[i].y = Math.random() * window.innerHeight;
-				return null;
-			});
 			drawCanvas();
 		}
 	}, []);
